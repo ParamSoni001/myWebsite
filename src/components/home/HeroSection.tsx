@@ -10,7 +10,7 @@ type HeroSectionProps = {
 const HeroSection = ({
   title = "PORTFOLIO",
   name = "Param Soni",
-  role = "Software Engineer",
+  role = "Engineer",
 }: HeroSectionProps) => {
   return (
     <section className="relative w-full h-[902px] flex items-center justify-center bg-white overflow-hidden">
@@ -167,9 +167,9 @@ const HeroSection = ({
         transition={{ duration: 0.8, delay: 1.5 }}
       >
         <h2 className="text-3xl font-medium text-gray-800">{name}</h2>
-        <div className="relative overflow-hidden h-8 mt-1">
+        <div className="relative mt-1 h-auto">
           <motion.p
-            className="text-xl text-gray-600 absolute"
+            className="text-xl text-gray-600 absolute whitespace-nowrap"
             initial={{ y: 30 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 1.8, type: "spring" }}
