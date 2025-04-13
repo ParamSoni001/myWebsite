@@ -19,7 +19,10 @@ function App() {
       <div className="min-h-screen w-full overflow-auto">
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={<Home name="Param Soni" role="Software Engineer" />}
+          />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/certification" element={<CertificationPage />} />
